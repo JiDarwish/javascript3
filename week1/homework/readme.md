@@ -8,9 +8,8 @@ The solution of the problem was by sending a XmlHttpRequest to the API mentioned
 
 - Here is a sample of the GET request:
 
-GET request
 
-snippets/*
+```javascript
 function XHR(theUrl, callback, filter) {
     let request = new XMLHttpRequest();
     request.open("GET", theUrl, true);
@@ -23,20 +22,22 @@ function XHR(theUrl, callback, filter) {
         }
     }
 }
-*/
+```
+
 
 - And here is a sample of using arrow functions:
 
-snippets/*
+
+```javascript
 statisticButt.onclick = () => XHR(hyfUrl, statistics);
-*/
+```
 
 
 - And last but not least a sample of using one of the Arrays methods:
 
-snippets/*
+```javascript
 let maxForks = theData.reduce((a, b) => {return (a.forks > b.forks) ? a: b});
-*/
+```
 
 
 
