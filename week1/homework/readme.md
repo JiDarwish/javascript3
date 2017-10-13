@@ -48,3 +48,4 @@ the Api used for the homework is:
 https://api.github.com/orgs/HackYourFuture/repos
 
 Have fun using the website!!! ^_^
+[Link to page](https://jidarwish.github.io/javascript3/week1/homework/)
