@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> API website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="clickRender">
+        <h1>Click to display or clear everything</h1>
+        <form id="showReposForm">
+            <input type="button" name="showRepos" id="showRepos" value="Show repos">
+            <input type="button" name="clearButt" id="clearButt" value="Clear screen">
+        </form>
+    </div>
+
+    <div id="searchTerm">
+        <div id="statisticWrapper">
+            <form><input type="button" id="statistic" name="statistic" value="Show statistics"></form>
+        </div>
+        <form>
+            <label for="sortBy">Sort items by</label>
+            <select name="filterForm" id="orderForm">
+               <option value="forks">Number of forked</option>
+               <option value="watchers">Number of watchers</option>
+               <option value="size">size</option>
+            </select>
+            <input type="button" name="filter" id="orderTrigger" value="Filter">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

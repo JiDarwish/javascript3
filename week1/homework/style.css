@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(http://www.hackyourfuture.net/images/logo/logo-01.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#clickRender {
+    padding: 1rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: #c8e1ff;
+    border: ridge #84c1ff 2px;
+    border-radius: 2rem;
+}
+
+#showReposForm input {
+    margin: 0 2rem;
+    margin-top: 1.5rem;
+}
+
+#searchTerm {
+    display: none;
+    background-color: #c8e1ff;
+    text-align: right;
+    padding: 1rem;
+    border-bottom: ridge #84c1ff 1px;
+    border-top: ridge #84c1ff 1px;
+    animation: SearchAnimation 1s;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+@keyframes SearchAnimation {
+    0% {
+        bottom: -8vw;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1.0;
+    }
+}
+
+#statisticWrapper {
+    min-width: 1rem;
+    float: left;
+}
+
+#allRepoContainer {
+    width: 100%;
+}
+
+.oneOfAll {
+    overflow: hidden;
+    background-color: #f1f8ff;
+    width: 70%;
+    border: ridge #84c1ff 0.1rem;
+    transition: all 0.2s ease-in;
+    border-radius: 1rem;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.6rem 0.1rem;
+    position: relative;
+}
+
+.oneOfAll:nth-child(odd) {
+    animation: appearRight 0.8s;
+    opacity: 0.8;
+}
+
+.oneOfAll:nth-child(even) {
+    animation: appearLeft 0.8s;
+    opacity: 0.8;
+}
+
+
+/*Key frames for repos*/
+
+@keyframes appearRight {
+    0% {
+        opacity: 0;
+        right: -20vh
+    }
+    100% {
+        opacity: 0.8;
+        right: 0vh
+    }
+}
+
+@keyframes appearLeft {
+    0% {
+        opacity: 0;
+        left: -20vh
+    }
+    100% {
+        opacity: 0.8;
+        left: 0vh
+    }
+}
+
+#statisticDiv {
+    opacity: 0.8;
+    width: 85%;
+    margin: 1rem auto;
+    border: ridge black 2px;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #c8e1ff;
+    animation: opacityStatistic 1s;
+}
+
+#statisticDiv h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#statisticList {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#statisticList li span {
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 130%;
+    color: #4192e4;
+    text-shadow: 1px 1px darkblue;
+}
+
+#statisticList li {
+    margin: 1rem 0;
+    background-color: #f1f8ff;
+    box-shadow: 0.1rem 0.1rem 5px black;
+    transition: all 0.2s ease-in-out;
+    padding: 0.1rem 1rem;
+}
+
+#statisticList h3 {
+    padding-bottom: 0.5rem;
+    text-align: center;
+    border-bottom: ridge #84c1ff 1px;
+    margin: 0.5rem 0;
+}
+
+@keyframes opacityStatistic {
+    0% {opacity: 0}
+    100% {opacity: 0.7}
+}
+
+
+/*hover effects*/
+
+.oneOfAll:hover {
+    background-color: #c8e1ff;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.contriItems:hover {
+    background-color: #c8e1ff;
+    transform: scale(1.12);
+    opacity: 1;
+}
+
+#statisticList li:hover {
+    background: #84c1ff;
+    transform: scale(1.1);
+}
