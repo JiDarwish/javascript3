@@ -1,6 +1,10 @@
+# Synopsis
+
 This is a website that gets all HackYourFuture's repositories and displays them on command of the user (the user can clear the screen again if he wants as well)
 The website enables the user aswell to oreder the list of repositories in many aspects. The most forked repository, the most viewd ones and the largest size wise.
 
+
+# Code examples
 
 The solution of the problem was by sending a XmlHttpRequest to the API mentioned further in the readme file, and making the request Asynchronous so that the page don't break while loading if the URL for the API was (for some reason) unvalid.
 
@@ -39,7 +43,7 @@ statisticButt.onclick = () => XHR(hyfUrl, statistics);
 let maxForks = theData.reduce((a, b) => {return (a.forks > b.forks) ? a: b});
 ```
 
-
+# Motivation
 
 This was a homework assignment that I had to make for HackYourFuture, but the main motivation behind this is to practice using the arrow functions and some very interesting array built in function.
 
